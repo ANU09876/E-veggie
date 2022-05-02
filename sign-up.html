@@ -63,16 +63,19 @@ background: url("bridge.png");
 background-size: cover;
 background-position : center;
 background-color : white;
-padding: 50px;
-margin: 0px;
+
+text-align:center;
+
+padding: 0px;
+margin: 50px;
 }
 
 
 .box {
-width: 30%;
+width:30%;
 position: absolute;
-height: 60%;
-background-color: purple;
+height: 75%;
+background-color: #E6E6FA;
 margin:2px;
 font-size: 20px;
 border-radius: 40px;
@@ -88,6 +91,10 @@ text-align: center;
 font-size:20px;
 padding: 5px; 
 }
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 3;
+}
 
 </style>
     
@@ -95,8 +102,8 @@ padding: 5px;
 <div class="main">
         <div class="box">
 
-                        <h1 style="background-color:purple; text-align: center;">Sign Up</h1><br>
-                        <form method="POST" class="register-form"  name="myform" id="register-form" onsubmit="return validateform()">
+                        <h1  text-align: center;>Sign Up</h1><br>
+                        <form method="POST" class="register-form"  name="myform" id="register-form" onsubmit="validateform()">
                             
                             <div class="inputBox"">
                                 <label for="Name"> </label>
@@ -110,7 +117,7 @@ padding: 5px;
          
                             <div class="inputBox"">
                                 <label for="Password"> </label>
-                                <input type="password" name="password" id="Password" placeholder="PASSWORD"/>
+                                <input type="password" name="password" id="Password" placeholder="Password"/>
                             </div> <br>
 
                             <div class="inputBox"">
@@ -120,11 +127,11 @@ padding: 5px;
 
                             <div class="inputBox">
                                 <input type="checkbox" name="agree" id="Agree" class="agree-term" />
-                                <label for="Agree" class="label-agree-term"><span><span></span></span>I agree to the <a href="#" class="term-service">terms and conditions.</a></label><br>
+                                <label for="Agree" class="label-agree-term">I agree to the <a href="#" class="term-service">terms and conditions.</a></label><br>
                             </div> <br>
  
                             <div class="form-group form-button">
-                                <input style="background-color:#48hf48;" type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                                <input style="background-color:	#808080" type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
                             </div> <br>
                         </form>
                     </div>
